@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89B388A72A6BF5BD009E45BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B388A62A6BF5BD009E45BC /* AppDelegate.swift */; };
+		89B388A92A6BF5BD009E45BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B388A82A6BF5BD009E45BC /* SceneDelegate.swift */; };
+		89B388AB2A6BF5BD009E45BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B388AA2A6BF5BD009E45BC /* ViewController.swift */; };
+		89B388AE2A6BF5BD009E45BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B388AC2A6BF5BD009E45BC /* Main.storyboard */; };
+		89B388B02A6BF5BE009E45BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B388AF2A6BF5BE009E45BC /* Assets.xcassets */; };
+		89B388B32A6BF5BE009E45BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B388B12A6BF5BE009E45BC /* LaunchScreen.storyboard */; };
+		89B388BE2A6C0065009E45BC /* NetworingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B388BD2A6C0065009E45BC /* NetworingManager.swift */; };
+		A9AB4B0F9C56F7A2ECBDD39A /* Pods_Dog_ConcentrationGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21F11EDE30DF9B938588AD8 /* Pods_Dog_ConcentrationGame.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18D8E44297F2A80986938D82 /* Pods-Dog-ConcentrationGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dog-ConcentrationGame.debug.xcconfig"; path = "Target Support Files/Pods-Dog-ConcentrationGame/Pods-Dog-ConcentrationGame.debug.xcconfig"; sourceTree = "<group>"; };
+		89B388A32A6BF5BD009E45BC /* Dog-ConcentrationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog-ConcentrationGame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89B388A62A6BF5BD009E45BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89B388A82A6BF5BD009E45BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		89B388AA2A6BF5BD009E45BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89B388AD2A6BF5BD009E45BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89B388AF2A6BF5BE009E45BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89B388B22A6BF5BE009E45BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89B388B42A6BF5BE009E45BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89B388BD2A6C0065009E45BC /* NetworingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworingManager.swift; sourceTree = "<group>"; };
+		C7F936DABDD2270EA465F40D /* Pods-Dog-ConcentrationGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dog-ConcentrationGame.release.xcconfig"; path = "Target Support Files/Pods-Dog-ConcentrationGame/Pods-Dog-ConcentrationGame.release.xcconfig"; sourceTree = "<group>"; };
+		F21F11EDE30DF9B938588AD8 /* Pods_Dog_ConcentrationGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dog_ConcentrationGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89B388A02A6BF5BD009E45BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9AB4B0F9C56F7A2ECBDD39A /* Pods_Dog_ConcentrationGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		235D421315AAE1ADB1B16979 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F21F11EDE30DF9B938588AD8 /* Pods_Dog_ConcentrationGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B30F7C278B925B5F6539DA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18D8E44297F2A80986938D82 /* Pods-Dog-ConcentrationGame.debug.xcconfig */,
+				C7F936DABDD2270EA465F40D /* Pods-Dog-ConcentrationGame.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		89B3889A2A6BF5BD009E45BC = {
+			isa = PBXGroup;
+			children = (
+				89B388A52A6BF5BD009E45BC /* Dog-ConcentrationGame */,
+				89B388A42A6BF5BD009E45BC /* Products */,
+				6B30F7C278B925B5F6539DA1 /* Pods */,
+				235D421315AAE1ADB1B16979 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		89B388A42A6BF5BD009E45BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89B388A32A6BF5BD009E45BC /* Dog-ConcentrationGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89B388A52A6BF5BD009E45BC /* Dog-ConcentrationGame */ = {
+			isa = PBXGroup;
+			children = (
+				89B388BC2A6C0035009E45BC /* Model */,
+				89B388BB2A6C0032009E45BC /* View */,
+				89B388BA2A6C002E009E45BC /* Controller */,
+				89B388A62A6BF5BD009E45BC /* AppDelegate.swift */,
+				89B388A82A6BF5BD009E45BC /* SceneDelegate.swift */,
+				89B388AF2A6BF5BE009E45BC /* Assets.xcassets */,
+				89B388B42A6BF5BE009E45BC /* Info.plist */,
+			);
+			path = "Dog-ConcentrationGame";
+			sourceTree = "<group>";
+		};
+		89B388BA2A6C002E009E45BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89B388AA2A6BF5BD009E45BC /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		89B388BB2A6C0032009E45BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89B388AC2A6BF5BD009E45BC /* Main.storyboard */,
+				89B388B12A6BF5BE009E45BC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89B388BC2A6C0035009E45BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89B388BD2A6C0065009E45BC /* NetworingManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89B388A22A6BF5BD009E45BC /* Dog-ConcentrationGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89B388B72A6BF5BE009E45BC /* Build configuration list for PBXNativeTarget "Dog-ConcentrationGame" */;
+			buildPhases = (
+				AF9D17A1B409B7B2FE4FF020 /* [CP] Check Pods Manifest.lock */,
+				89B3889F2A6BF5BD009E45BC /* Sources */,
+				89B388A02A6BF5BD009E45BC /* Frameworks */,
+				89B388A12A6BF5BD009E45BC /* Resources */,
+				6280261E7D881086914F738A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dog-ConcentrationGame";
+			productName = "Dog-ConcentrationGame";
+			productReference = 89B388A32A6BF5BD009E45BC /* Dog-ConcentrationGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89B3889B2A6BF5BD009E45BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					89B388A22A6BF5BD009E45BC = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 89B3889E2A6BF5BD009E45BC /* Build configuration list for PBXProject "Dog-ConcentrationGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89B3889A2A6BF5BD009E45BC;
+			productRefGroup = 89B388A42A6BF5BD009E45BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89B388A22A6BF5BD009E45BC /* Dog-ConcentrationGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89B388A12A6BF5BD009E45BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89B388B32A6BF5BE009E45BC /* LaunchScreen.storyboard in Resources */,
+				89B388B02A6BF5BE009E45BC /* Assets.xcassets in Resources */,
+				89B388AE2A6BF5BD009E45BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6280261E7D881086914F738A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dog-ConcentrationGame/Pods-Dog-ConcentrationGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dog-ConcentrationGame/Pods-Dog-ConcentrationGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dog-ConcentrationGame/Pods-Dog-ConcentrationGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF9D17A1B409B7B2FE4FF020 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dog-ConcentrationGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89B3889F2A6BF5BD009E45BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89B388AB2A6BF5BD009E45BC /* ViewController.swift in Sources */,
+				89B388BE2A6C0065009E45BC /* NetworingManager.swift in Sources */,
+				89B388A72A6BF5BD009E45BC /* AppDelegate.swift in Sources */,
+				89B388A92A6BF5BD009E45BC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		89B388AC2A6BF5BD009E45BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89B388AD2A6BF5BD009E45BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		89B388B12A6BF5BE009E45BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89B388B22A6BF5BE009E45BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89B388B52A6BF5BE009E45BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		89B388B62A6BF5BE009E45BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89B388B82A6BF5BE009E45BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18D8E44297F2A80986938D82 /* Pods-Dog-ConcentrationGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GD6Z746C72;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dog-ConcentrationGame/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kosovar.Dog-ConcentrationGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89B388B92A6BF5BE009E45BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7F936DABDD2270EA465F40D /* Pods-Dog-ConcentrationGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GD6Z746C72;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dog-ConcentrationGame/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kosovar.Dog-ConcentrationGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89B3889E2A6BF5BD009E45BC /* Build configuration list for PBXProject "Dog-ConcentrationGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89B388B52A6BF5BE009E45BC /* Debug */,
+				89B388B62A6BF5BE009E45BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89B388B72A6BF5BE009E45BC /* Build configuration list for PBXNativeTarget "Dog-ConcentrationGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89B388B82A6BF5BE009E45BC /* Debug */,
+				89B388B92A6BF5BE009E45BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89B3889B2A6BF5BD009E45BC /* Project object */;
+}

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dog_ConcentrationGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uPq-IG-dSL">
+                                <rect key="frame" x="38.666666666666657" y="214" width="316" height="424"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M4Y-7i-0vY">
+                                        <rect key="frame" x="0.0" y="0.0" width="316" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyY-kQ-RJI">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="4AZ-bI-2UQ"/>
+                                                    <constraint firstAttribute="width" constant="100" id="KkD-Fz-GY1"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="card"/>
+                                                <connections>
+                                                    <action selector="button1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BeB-6L-UCQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aj-z8-bqK">
+                                                <rect key="frame" x="108" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="9Kq-OC-Ss0"/>
+                                                    <constraint firstAttribute="height" constant="100" id="mAI-Vq-0Qx"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="card"/>
+                                                <connections>
+                                                    <action selector="button2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Plc-yd-d6P"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CES-fy-pCj">
+                                                <rect key="frame" x="216" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="0Cf-VH-LhM"/>
+                                                    <constraint firstAttribute="height" constant="100" id="GHb-WQ-LlA"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="card"/>
+                                                <connections>
+                                                    <action selector="button3Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Pa-Td-wIE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xqg-Hm-3WD">
+                                        <rect key="frame" x="0.0" y="108" width="316" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCi-yB-teB">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="6yV-EB-Vbj"/>
+                                                    <constraint firstAttribute="width" constant="100" id="yhc-kB-wLy"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="card"/>
+                                                <connections>
+                                                    <action selector="button4Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gaj-Bn-Pqh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9Q-jc-pM5">
+                                                <rect key="frame" x="108" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="n2S-ty-KcX"/>
+                                                    <constraint firstAttribute="height" constant="100" id="uzh-2x-U9G"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="card"/>
+                                                <connections>
+                                                    <action selector="button5Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zO5-bk-cmq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ken-Z0-vVe">
+                                                <rect key="frame" x="216" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="4dR-vj-Ecg"/>
+                                                    <constraint firstAttribute="height" constant="100" id="fAc-Wz-nNn"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="card"/>
+                                                <connections>
+                                                    <action selector="button6Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QnA-bp-LBk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dZ1-8a-PXY">
+                                        <rect key="frame" x="0.0" y="216" width="316" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYn-wa-77J">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="1Q7-yt-XTp"/>
+                                                    <constraint firstAttribute="width" constant="100" id="AyT-D4-Ecj"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="card"/>
+                                                <connections>
+                                                    <action selector="button7Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5de-yn-24y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppf-fk-HrY">
+                                                <rect key="frame" x="108" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="6eV-Zx-lBJ"/>
+                                                    <constraint firstAttribute="width" constant="100" id="r24-dk-EHA"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="card"/>
+                                                <connections>
+                                                    <action selector="button8Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UKH-jE-eXN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Puu-Ue-f9f">
+                                                <rect key="frame" x="216" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="LJr-El-WVK"/>
+                                                    <constraint firstAttribute="width" constant="100" id="YyY-1E-loP"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="card"/>
+                                                <connections>
+                                                    <action selector="button9Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MBV-QS-b3v"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xv3-Yx-qYT">
+                                        <rect key="frame" x="0.0" y="324" width="316" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYU-wo-nfP">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="Kvc-eP-eEB"/>
+                                                    <constraint firstAttribute="width" constant="100" id="yYj-Cg-58Q"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="card"/>
+                                                <connections>
+                                                    <action selector="button10Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jWm-AP-DaU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0G-yi-7fA">
+                                                <rect key="frame" x="108" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="XaY-4m-4Yt"/>
+                                                    <constraint firstAttribute="height" constant="100" id="iJe-Vo-7YS"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="card"/>
+                                                <connections>
+                                                    <action selector="button11Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oK2-Nq-ffD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpk-hA-bhO">
+                                                <rect key="frame" x="216" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="DgL-Ct-zYk"/>
+                                                    <constraint firstAttribute="width" constant="100" id="NKe-yJ-UJh"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="card"/>
+                                                <connections>
+                                                    <action selector="button12Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQ3-5w-r5K"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player One 1 : 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2t-NZ-XIG">
+                                <rect key="frame" x="16" y="75" width="163.66666666666666" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player One 2 : 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhN-cY-xGt">
+                                <rect key="frame" x="210.66666666666663" y="75" width="166.33333333333337" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uPq-IG-dSL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="92k-vp-duf"/>
+                            <constraint firstItem="E2t-NZ-XIG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Eay-gY-b6d"/>
+                            <constraint firstItem="EhN-cY-xGt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Fbg-sj-vBc"/>
+                            <constraint firstItem="E2t-NZ-XIG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LQk-Ge-xVF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EhN-cY-xGt" secondAttribute="trailing" constant="16" id="i7i-Bq-3T1"/>
+                            <constraint firstItem="uPq-IG-dSL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j6X-1Y-IiB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="HyY-kQ-RJI" id="iwo-mB-BUj"/>
+                        <outlet property="button10" destination="uYU-wo-nfP" id="3K5-qF-k1f"/>
+                        <outlet property="button11" destination="A0G-yi-7fA" id="58x-jV-xCL"/>
+                        <outlet property="button12" destination="dpk-hA-bhO" id="db2-jB-nBp"/>
+                        <outlet property="button2" destination="3aj-z8-bqK" id="UcQ-ik-ha7"/>
+                        <outlet property="button3" destination="CES-fy-pCj" id="zfQ-me-pXD"/>
+                        <outlet property="button4" destination="wCi-yB-teB" id="16e-m2-bol"/>
+                        <outlet property="button5" destination="t9Q-jc-pM5" id="qG7-b1-dVF"/>
+                        <outlet property="button6" destination="Ken-Z0-vVe" id="k7y-OE-zzd"/>
+                        <outlet property="button7" destination="VYn-wa-77J" id="DVv-eA-bBL"/>
+                        <outlet property="button8" destination="ppf-fk-HrY" id="fbI-Ud-DVy"/>
+                        <outlet property="button9" destination="Puu-Ue-f9f" id="Cnc-GZ-2v3"/>
+                        <outlet property="player1Label" destination="E2t-NZ-XIG" id="2ol-Ho-eWs"/>
+                        <outlet property="player2Label" destination="EhN-cY-xGt" id="ePM-28-eWQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card" width="235" height="325"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
