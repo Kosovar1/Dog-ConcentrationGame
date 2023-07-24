@@ -197,6 +197,16 @@
                                 <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stv-Mu-jRL">
+                                <rect key="frame" x="146.66666666666666" y="127" width="100" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DeL-dP-hiH"/>
+                                    <constraint firstAttribute="width" constant="100" id="I4t-Ud-Whr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -205,8 +215,10 @@
                             <constraint firstItem="E2t-NZ-XIG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Eay-gY-b6d"/>
                             <constraint firstItem="EhN-cY-xGt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Fbg-sj-vBc"/>
                             <constraint firstItem="E2t-NZ-XIG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LQk-Ge-xVF"/>
+                            <constraint firstItem="stv-Mu-jRL" firstAttribute="top" secondItem="E2t-NZ-XIG" secondAttribute="bottom" constant="24.329999999999998" id="bP4-vd-yhW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EhN-cY-xGt" secondAttribute="trailing" constant="16" id="i7i-Bq-3T1"/>
                             <constraint firstItem="uPq-IG-dSL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j6X-1Y-IiB"/>
+                            <constraint firstItem="stv-Mu-jRL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lFv-KZ-kli"/>
                         </constraints>
                     </view>
                     <connections>
@@ -224,6 +236,7 @@
                         <outlet property="button9" destination="Puu-Ue-f9f" id="Cnc-GZ-2v3"/>
                         <outlet property="player1Label" destination="E2t-NZ-XIG" id="2ol-Ho-eWs"/>
                         <outlet property="player2Label" destination="EhN-cY-xGt" id="ePM-28-eWQ"/>
+                        <outlet property="timerLabel" destination="stv-Mu-jRL" id="fz1-u3-zQd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

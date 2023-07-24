@@ -5,7 +5,8 @@ class ViewController: UIViewController {
     
     var imageUrls: [String] = []
     var buttons: [UIButton] = []
-    
+    var timer: Timer?
+     var timeRemaining: Int = 60
     
     var click = 1
     var click1 = 0
@@ -14,6 +15,7 @@ class ViewController: UIViewController {
     var points2 = 0
     var player = 1
     
+    @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var player1Label: UILabel!
     
     @IBOutlet weak var player2Label: UILabel!
@@ -42,11 +44,77 @@ class ViewController: UIViewController {
                 self?.imageUrls = imageUrls
                 print("Fetched Image URLs: \(imageUrls)") // Add this print statement
                 self?.setButtonImages(imageUrls: imageUrls)
+                self?.startGame()
             }
         }
 
         buttons = [button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11, button12]
     }
+    
+    private func startGame() {
+          matchedButtons = []
+          click = 1
+          click1 = 0
+          click2 = 0
+          points1 = 0
+          points2 = 0
+          player = 1
+
+          // Reset player labels and button images
+          player1Label.text = "Player 1: 0 points"
+          player2Label.text = "Player 2: 0 points"
+          for button in buttons {
+              button.alpha = 1
+              button.setImage(defaultImage, for: .normal)
+          }
+
+          // Start the timer
+          startTimer()
+        updateTimerLabel(seconds: timeRemaining)
+      }
+    private func startTimer() {
+           timeRemaining = 60
+           timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+       }
+
+       // Function to update the timer
+    @objc private func updateTimer() {
+        timeRemaining -= 1
+        if timeRemaining <= 0 {
+            timer?.invalidate()
+            timer = nil
+
+            // Game time is up, show an alert
+            let alertController = UIAlertController(title: "Time's Up!", message: "The game has ended.", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] _ in
+                // Restart the game when the user taps OK
+                self?.startGame()
+            }))
+            present(alertController, animated: true, completion: nil)
+
+            // Update the timer label with "00:00" when the game ends
+            updateTimerLabel(seconds: 0)
+        } else {
+            // Update the timer label with the remaining time
+            updateTimerLabel(seconds: timeRemaining)
+        }
+    }
+    private func updateTimerLabel(seconds: Int) {
+        let remainingMinutes = seconds / 60
+        let remainingSeconds = seconds % 60
+        let formattedTime = String(format: "%02d:%02d", remainingMinutes, remainingSeconds)
+        
+        DispatchQueue.main.async { [weak self] in
+            self?.timerLabel.text = formattedTime
+        }
+    }
+
+       // Function to stop the timer
+       private func stopTimer() {
+           timer?.invalidate()
+           timer = nil
+       }
+    
     private let defaultImage = UIImage(named: "card")
     
     @IBAction func button1Action(_ sender: Any) {
@@ -107,6 +175,7 @@ class ViewController: UIViewController {
             self.present(alertController, animated: true, completion: nil)
         }
     }
+    // Function to handle button clicks
     func handleButtonClick(for button: UIButton, atIndex index: Int) {
         // Check if the button is already matched or has been clicked before
         if button.alpha == 0 || matchedButtons.contains(button) {
@@ -128,7 +197,14 @@ class ViewController: UIViewController {
             print("Second click: \(click2)")
             compare()
         }
+
+        // If the game is over, stop the timer
+        if matchedButtons.count == buttons.count {
+            stopTimer()
+        }
     }
+
+    // Function to compare two selected buttons
     func compare() {
         print("Comparing images...")
         if imageUrls[click1 - 1] == imageUrls[click2 - 1] {
@@ -166,27 +242,24 @@ class ViewController: UIViewController {
 
                     // Display an alert with the winner's information
                     let alertController = UIAlertController(title: "Game Over", message: winner, preferredStyle: .alert)
-                    alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] _ in
+                        // Restart the game when the user taps OK
+                        self?.startGame()
+                    }))
                     self?.present(alertController, animated: true, completion: nil)
-
-                    // Send a local notification with the winner's information
-                    let content = UNMutableNotificationContent()
-                    content.title = "Game Over"
-                    content.body = winner
-                    let request = UNNotificationRequest(identifier: "gameOver", content: content, trigger: nil)
-                    UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
                 }
             }
         } else {
             print("No match!")
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) { [weak self] in
                 // Hide the unmatched cards
-                self?.buttons[self!.click1 - 1].setImage(UIImage(named: "card"), for: .normal)
-                self?.buttons[self!.click2 - 1].setImage(UIImage(named: "card"), for: .normal)
+                self?.buttons[self!.click1 - 1].setImage(self?.defaultImage, for: .normal)
+                self?.buttons[self!.click2 - 1].setImage(self?.defaultImage, for: .normal)
                 self?.switchPlayer()
             }
         }
     }
+
 
     func switchPlayer() {
         if player == 1 {

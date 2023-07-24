@@ -58,7 +58,6 @@
 				18D8E44297F2A80986938D82 /* Pods-Dog-ConcentrationGame.debug.xcconfig */,
 				C7F936DABDD2270EA465F40D /* Pods-Dog-ConcentrationGame.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
